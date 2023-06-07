@@ -1,0 +1,10 @@
+[Unit]
+Description=DP Sniffer
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/dp_sniffer
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
